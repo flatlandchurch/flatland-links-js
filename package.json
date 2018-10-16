@@ -1,0 +1,19 @@
+{
+  "name": "flatland-links-js",
+  "version": "1.0.0",
+  "description": "A simple link generator for Instagram that can be quickly be updated by pushing a change to the links.json file.",
+  "main": "index.js",
+  "repository": "https://github.com/flatlandchurch/flatland-links-js",
+  "author": "Matt McElwee <mubatt@wyopub.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "start": "nodemon ./src/tools/server.js"
+  }
+}

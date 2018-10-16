@@ -14,6 +14,7 @@
     "rimraf": "^2.6.2"
   },
   "scripts": {
-    "start": "nodemon ./src/tools/server.js"
+    "start": "nodemon ./src/tools/server.js",
+    "build": "node ./src/tools/build.js"
   }
 }

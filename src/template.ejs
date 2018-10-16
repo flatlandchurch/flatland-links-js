@@ -31,6 +31,15 @@
                     <%- links[i] %>
                 <% } %>
             </div>
+            <script>
+                const expirableButtons = document.querySelectorAll('.cta.expires');
+                expirableButtons.forEach((btn) => {
+                  const date = btn.getAttribute('data-display-until');
+                  if (new Date() > new Date(date)) {
+                    btn.style.display = 'none';
+                  }
+                });
+            </script>
         </div>
     </body>
 </html>

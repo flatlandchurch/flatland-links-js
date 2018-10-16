@@ -36,7 +36,7 @@
                 expirableButtons.forEach((btn) => {
                   const date = btn.getAttribute('data-display-until');
                   if (new Date() > new Date(date)) {
-                    btn.style.display = 'none';
+                    btn.parentNode.removeChild(btn);
                   }
                 });
             </script>
